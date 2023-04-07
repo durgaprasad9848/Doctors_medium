@@ -36,13 +36,11 @@ const loginController = async (req, res) => {
     if (!isMatch) {
       return res.status(200).send({ message: 'Invlid EMail or Password', success: false });
     }
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
-      expiresIn: '1d',
-    });
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
     res.status(200).send({ message: 'Login Success', success: true, token });
   } catch (error) {
     console.log(error);
-    res.status(500).send({ message: `Error in Login CTRL ${error.message}` });
+    res.status(500).send({ message: `Error in Login Control ${error.message}` });
   }
 };
 
