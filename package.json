@@ -1,0 +1,33 @@
+{
+  "name": "doctorappointment_mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAslan8006/DoctorAppointment_Mern.git"
+  },
+  "keywords": [],
+  "author": "Süleyman Aslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAslan8006/DoctorAppointment_Mern/issues"
+  },
+  "homepage": "https://github.com/SAslan8006/DoctorAppointment_Mern#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0"
+  }
+}
