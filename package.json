@@ -1,7 +1,6 @@
 {
   "name": "doctorappointment_mern",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -30,5 +29,6 @@
     "moment": "^2.29.4",
     "mongoose": "^7.0.3",
     "morgan": "^1.10.0"
-  }
+  },
+  "description": ""
 }
